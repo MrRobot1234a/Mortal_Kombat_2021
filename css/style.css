@@ -184,12 +184,20 @@ body {
         background-size: 50%;
         background-color: black;
     }
+
+    .trailer_video {
+        width: 80%;
+    }
 }
 
 @media (max-width: 1140px) {
     .information {
         padding: 174px 0 174px 0;
     }   
+
+    .trailer_video {
+        width: 81%;
+    }
 }
 
 @media  (max-width: 960px) {
@@ -200,6 +208,10 @@ body {
 
     .information_wrapper_descr {
         font-size: 19px;
+    }
+
+    .trailer_video {
+        width: 86%;
     }
 }
 
@@ -220,6 +232,10 @@ body {
 
     .information_wrapper_descr {
         font-size: 15px;
+    }
+
+    .trailer_video {
+        height: 400px;
     }
 }
 
@@ -261,5 +277,15 @@ body {
 
     .information_wrapper_descr {
         text-align: center;
+    }
+
+    .trailer_video {
+        height: 365px;
+    }
+}
+
+@media (max-width: 500px) {
+    .trailer_video {
+        height: 320px;
     }
 }
