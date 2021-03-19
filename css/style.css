@@ -143,12 +143,15 @@ body {
 }
 
 .show {
-    display: block;
     transition: .6s all;
+    display: block;
+    
 }
 
 .hide {
+    transition: .6s all;
     display: none;
+    
 }
 
 .trailer_close {
