@@ -36,12 +36,12 @@ window.addEventListener(`DOMContentLoaded`, (e) => {
         }
     });
 
-    // modal.addEventListener(`click`, (e) => {
-    //     if (e.target === modal) {
-    //         hideTrailer(tagVideo); 
-    //     }
+    modal.addEventListener(`click`, (e) => {
+        if (e.target === modal) {
+            hideTrailer(tagVideo); 
+        }
          
-    // });
+    });
 
 
 });
