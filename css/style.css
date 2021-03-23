@@ -142,18 +142,6 @@ body {
     outline: none;
 }
 
-.show {
-    transition: .6s all;
-    display: block;
-    
-}
-
-.hide {
-    transition: .6s all;
-    display: none;
-    
-}
-
 .trailer_close {
     position: absolute;
     right: 4%;
@@ -179,6 +167,129 @@ body {
 .trailer_close:after {
     transform: rotate(-45deg);
 }
+
+.preOrder {
+    position: relative;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.preOrder_wrapper {
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;;
+    max-width: 600px;
+    min-height: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.preOrder_wrapper_title{
+    font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+    color: rgb(234, 109, 31);
+}
+
+.form {
+    position: relative;
+    text-align: center;
+    padding: 40px 0 0 0;
+}
+
+.preOrder_wrapper_name input {
+    margin-top: 25px;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    outline: none;
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 20px;
+}
+
+.preOrder_wrapper_surname input {
+    margin-top: 15px;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    outline: none;
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 20px;
+}
+
+.preOrder_wrapper_tel input {
+    margin-top: 15px;
+    width: 60%;
+    height: 40px;
+    text-align: center;
+    font-size: 28px;
+    outline: none;
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 20px;
+}
+
+.preOrder_wrapper_button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(234, 109, 31);
+}
+
+.preOrder_wrapper_close {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+
+.preOrder_wrapper_close:hover {
+    opacity: 1;
+}
+.preOrder_wrapper_close:before, .preOrder_wrapper_close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 40px;
+    width: 3px;
+    background-color: black;
+}
+.preOrder_wrapper_close:before {
+    transform: rotate(45deg);
+}
+.preOrder_wrapper_close:after {
+    transform: rotate(-45deg);
+}
+
+.show {
+    transition: .6s all;
+    display: block;
+    
+}
+
+.hide {
+    transition: .6s all;
+    display: none;
+    
+}
+
+
 
 @media (max-width: 1200px) {
     body {
